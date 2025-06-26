@@ -6,6 +6,6 @@ z = 5
 #result = abs(y)
 #result = pow(y,3)
 #result = max(x, y, z)
-result = min(x, y, z)
+#result = min(x, y, z)
 
-print(result)
+#print(result)
