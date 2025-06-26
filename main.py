@@ -1,6 +1,6 @@
-response = input("Would you like food? (Y/N): ")
+online = False
 
-if response == "Y":
-    print("Have some food!")
+if online:
+    print("The user is online.")
 else:
-    print("No food for you!")
+    print("The user is offline.")
