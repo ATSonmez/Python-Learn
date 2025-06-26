@@ -1,12 +1,7 @@
 import math
 
-x = 9.1
+radius = float(input('Enter the radius of the circle: '))
 
-#print(math.pi)
-#print(math.e)
-#result = math.sqrt(x)
-#result = math.ceil(x)
-result = math.floor(x)
+circumference = 2 * math.pi * radius
 
-
-print(result)
+print(f"The circumference is: {round(circumference, 2)}")
