@@ -1,6 +1,1 @@
-online = False
-
-if online:
-    print("The user is online.")
-else:
-    print("The user is offline.")
+#Left at calculator program of Python Full Course 2024 BroCode
