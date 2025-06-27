@@ -1,11 +1,12 @@
-unit = input("Is this temperature in celsius or Fahrenheit? (C/F): ")
-temp = float(input("Enter the temperature: "))
+temp = 0
+is_sunny = True
 
-if unit == "C":
-    temp = ((9 * temp) / 5 + 32)
-    print(f"The temperature in Fahrenheit is {temp}°F")
-elif unit == "F":
-    temp = round((temp - 32) * 5 / 9, 1)
-    print(f"The temperature in Celsius is: {temp}°C")
-else:
-    print(f"{unit} is an invalid unit of measurement.")
+if temp >= 28 and is_sunny:
+    print("It is Hot outside")
+    print("It is Sunny")
+elif temp <= 0 and is_sunny:
+    print("It is Cold outside")
+    print("It is Sunny")
+elif temp < 28 and temp > 0 and is_sunny:
+    print("It is Warm outside")
+    print("It is Sunny")
