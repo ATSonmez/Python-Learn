@@ -1,13 +1,11 @@
-weight = float(input("Enter your weight "))
-unit = input("Kilgorams or Pounds? (K or L): ")
+unit = input("Is this temperature in celsius or Fahrenheit? (C/F): ")
+temp = float(input("Enter the temperature: "))
 
-if unit == "K":
-    weight = weight * 2.205
-    unit = "Lbs."
-    print(f"Your weight is: {round(weight, 1)} {unit}")
-elif unit == "L":
-    weight = weight / 2.205
-    unit = "Kgs."
-    print(f"Your weight is: {round(weight, 1)} {unit}")
+if unit == "C":
+    temp = ((9 * temp) / 5 + 32)
+    print(f"The temperature in Fahrenheit is {temp}°F")
+elif unit == "F":
+    temp = round((temp - 32) * 5 / 9, 1)
+    print(f"The temperature in Celsius is: {temp}°C")
 else:
-    print(f"{unit} was not valid")
+    print(f"{unit} is an invalid unit of measurement.")
