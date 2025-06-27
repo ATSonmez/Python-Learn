@@ -1,19 +1,18 @@
-num = 5
-a = 6
-b = 7
-age = 13
-temperature = 19
-user_role = "admin"
+#name = input("Enter your full name: ")
+#phone_number = input("Enter your phone number: ")
 
-#print("Positive" if num > 0 else "Negative")
-#result = "Even" if num % 2 == 0 else "Odd"
-#max_num = a if a > b else b
-#min_num = a if a < b else b
-#status = "Adult" if age >= 18 else "Child"
-#weather = "Hot" if temperature > 20 else "Cold"
-access_level = "Full Access" if user_role == "admin" else "Limited Access"
+#result = len(name)
+#result = name.find("a")
+#result = name.rfind("n")
+#name = name.capitalize()
+#name = name.upper()
+#name = name.lower()
+#name = name.isdigit()
+#result = name.isalpha()
+#result = phone_number.count("-")
+#phone_number = phone_number.replace("-", "")
+print(help(str))
 
-print(access_level)
 
 
 
