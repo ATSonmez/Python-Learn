@@ -1,22 +1,22 @@
-fruits = ("apple", "orange", "banana", "coconut", "coconut")
-print(fruits.count("coonut"))
+foods = [] 
+prices = []
+total = 0
 
-#print(dir(fruits))
-#print(help(fruits))
-#print("apple" in fruits=
+while True:
+    food = input("Enter a food to buy (q to quit): ")
+    if food.lower() == "q":
+        break
+    else:
+        price = float(input(f"Enter the price for {food}: $"))
+        foods.append(food)
+        prices.append(price)
 
-#fruits[1] = "pineapple"
-#fruits.append("pineapple")
-#fruits.remove("apple")
-#fruits.insert(0, "pineapple")
-#fruits.sort()
-#fruits.reverse()
-#fruits.clear()
-#print(fruits.index("apple"))
-#print(fruits.count("pine"))
-#print(len(fruits))
-#print("pineapple" in fruits)
-#fruits.pop()
+print("----- Your Cart -----")
 
+for food in foods:
+    print(food, end = " ")
 
-print(fruits)
+for price in prices:
+    total += price
+
+print(f"Your total is : ${total}")
