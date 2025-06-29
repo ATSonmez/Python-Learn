@@ -1,28 +1,31 @@
-capitals = {"USA": "Washington D.C.", 
-            "India": "New Delhi", 
-            "China": "Beijing",
-            "Russia": "Moscow"}
+menu = {"pizza": 3.00,
+        "nachos": 4.50,
+        "popcorn": 6.00,
+        "fries": 2.50,
+        "chips": 1.00,
+        "pretzel": 3.50,
+        "soda": 3.00,
+        "lemonade": 4.25}
 
-#print(capitals.get("Japan"))
-#if capitals.get("Japan"):
- #   print("That capital exists")
-#else:
- #   print("That capital doesn't exist")
+cart = []
+total = 0
 
-#capitals.update({"Germany": "Berlin"})
-#capitals.update({"USA": "Detroit"})
-#capitals.pop("China")
-#capitals.popitem()
-#keys = capitals.keys()
-#print(keys)
+print("-------- Menu --------")
+for key, value in menu.items():
+    print(f"{key:10}: ${value:.2f}")
+print("-----------------------")
 
-#for key in capitals.keys():
- #   print(key)
+while True:
+    food = input("Selected an item(q to quit): ")
+    if food.lower() == "q":
+        break
+    elif menu.get(food) is not None:
+        cart.append(food)
 
-#values = capitals.values()
 
-#for value in capitals.values():
- #   print(value)
-items = capitals.items()
-for key, value in capitals.items():
-    print(f"{key}: {value}")
+for food in cart:
+    total += menu.get(food)
+    print(food, end = " ")
+
+print()
+print(f"Total is: ${total:.2f}")
