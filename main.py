@@ -1,33 +1,28 @@
-questions = ("How many elements are in the periodic table?", 
-             "which animal lays the ;argest eggs", 
-             "Abundat gas", 
-             "Bones body", 
-             "planet")
+capitals = {"USA": "Washington D.C.", 
+            "India": "New Delhi", 
+            "China": "Beijing",
+            "Russia": "Moscow"}
 
+#print(capitals.get("Japan"))
+#if capitals.get("Japan"):
+ #   print("That capital exists")
+#else:
+ #   print("That capital doesn't exist")
 
-options = (("A", "B", "C",  "D"), 
-           ("A", "B", "C",  "D"), 
-           ("A", "B", "C1",  "D"), 
-           ("A", "B", "C",  "D"), 
-           ("A", "B", "C",  "D"))
+#capitals.update({"Germany": "Berlin"})
+#capitals.update({"USA": "Detroit"})
+#capitals.pop("China")
+#capitals.popitem()
+#keys = capitals.keys()
+#print(keys)
 
-answers = ("C", "D", "A", "A", "B")
-guesses = []
-score = 0 
-question_num = 0
+#for key in capitals.keys():
+ #   print(key)
 
-for question in questions:
-    print("---------------")
-    print(question)
-    for option in options[question_num]:
-        print(option)
-    guess = input("Enter (A, B, C, D): ").upper()
-    guesses.append(guess)
-    if guess == answers[question_num]:
-        score += 1
-        print("Correct!")
-    else:
-        print("Incorrect")
-        print(f"{answers[question_num]} is the correct answer")
-        
-    question_num += 1
+#values = capitals.values()
+
+#for value in capitals.values():
+ #   print(value)
+items = capitals.items()
+for key, value in capitals.items():
+    print(f"{key}: {value}")
