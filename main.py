@@ -1,21 +1,4 @@
-def shipping_label(*args, **kwargs):
-    for arg in args:
-        print(arg, end= " ")
-    print()
-    if "apt" in kwargs:
-        print(f"{kwargs.get('street')} {kwargs.get('apt')}")
-    elif "pobox" in kwargs:
-        print(f"{kwargs.get('street')}")
-        print(f"{kwargs.get('pobox')}")
-    else:
-       print(f"{kwargs.get('street')}")
-    print(f"{kwargs.get('city')} {kwargs.get('state')} {kwargs.get('zip')}")
-      
+grades = [85, 42, 79, 89, 90, 51, 30]
+passing_grades = [grade for grade in grades if grade>=60]
 
-shipping_label("Dr.", "Spongebob", "SquarePants", "III",
-               street= "123 Fake St.", 
-               pobox= "PO box #100",
-               city= "Detroit", 
-               state= "MI", 
-               zip= "54321")
-
+print(passing_grades)
