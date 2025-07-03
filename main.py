@@ -1,4 +1,13 @@
-grades = [85, 42, 79, 89, 90, 51, 30]
-passing_grades = [grade for grade in grades if grade>=60]
+#4:57:17
 
-print(passing_grades)
+def is_weekend(day):
+    match day:
+        case "Saturday" | "Sunday":
+            return True
+        case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
+            return False
+        case _:
+            return False
+        
+print(is_weekend("piz"))
+    
