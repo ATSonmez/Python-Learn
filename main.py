@@ -1,13 +1,5 @@
-#4:57:17
+import example123 
 
-def is_weekend(day):
-    match day:
-        case "Saturday" | "Sunday":
-            return True
-        case "Monday" | "Tuesday" | "Wednesday" | "Thursday" | "Friday":
-            return False
-        case _:
-            return False
-        
-print(is_weekend("piz"))
-    
+result = example123.pi
+
+print(result)
