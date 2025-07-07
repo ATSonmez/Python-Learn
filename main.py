@@ -22,7 +22,7 @@ print(f"original message: {plain_text}")
 print(f"encrypted message: {cipher_text}")
 
 #Decrypt
-cipher_text = input("Enter a message to encrypt: ")
+cipher_text = input("Enter a message to Decrypt: ")
 plain_text = ""
 
 for letter in cipher_text: 
